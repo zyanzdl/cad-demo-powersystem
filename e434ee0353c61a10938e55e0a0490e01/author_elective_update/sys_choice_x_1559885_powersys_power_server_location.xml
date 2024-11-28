@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="location" table="x_1559885_powersys_power_server" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <name>x_1559885_powersys_power_server</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>location</sys_name>
+            <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+            <sys_update_name>sys_choice_x_1559885_powersys_power_server_location</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:18:52</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Chengdu</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Chenghua</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:30:23</sys_updated_on>
+            <value>Chenghua</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Chengdu</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shuangliu</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:30:23</sys_updated_on>
+            <value>Shuangliu</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Chengdu</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wuhou</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:30:23</sys_updated_on>
+            <value>Wuhou</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Luzhou</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jiangyang</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:33:07</sys_updated_on>
+            <value>Jiangyang</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Meishan</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dongpo</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:33:07</sys_updated_on>
+            <value>Dongpo</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Meishan</dependent_value>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Renshou</label>
+            <language>en</language>
+            <name>x_1559885_powersys_power_server</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:18:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:33:07</sys_updated_on>
+            <value>Renshou</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

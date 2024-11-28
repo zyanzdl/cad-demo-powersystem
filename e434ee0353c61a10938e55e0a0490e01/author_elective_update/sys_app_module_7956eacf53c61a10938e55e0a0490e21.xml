@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Powersys 1732775573380</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1559885_powersys_1732775573380</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-28 06:32:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7956eacf53c61a10938e55e0a0490e21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Powersys 1732775573380</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name>sys_app_module_7956eacf53c61a10938e55e0a0490e21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:32:56</sys_updated_on>
+        <timeline_page/>
+        <title>Powersys 1732775573380</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Power System">e434ee0353c61a10938e55e0a0490e01</application>
+        <file_path/>
+        <instance_id>e47140311b1ef1507d9d2f8dee4bcb24</instance_id>
+        <instance_name>dev203920</instance_name>
+        <name>sys_app_module_7956eacf53c61a10938e55e0a0490e21</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Powersys 1732775573380</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1559885_powersys_1732775573380</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-28 06:32:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7956eacf53c61a10938e55e0a0490e21</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Powersys 1732775573380</sys_name><sys_overrides/><sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package><sys_policy/><sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope><sys_update_name>sys_app_module_7956eacf53c61a10938e55e0a0490e21</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-28 06:32:56</sys_updated_on><timeline_page/><title>Powersys 1732775573380</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-569811649</payload_hash>
+        <record_name>Powersys 1732775573380</record_name>
+        <reverted_from/>
+        <source>a434ee0353c61a10938e55e0a0490e05</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-28 06:32:56</sys_created_on>
+        <sys_id>f556eacf53c61a10938e55e0a0490e25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193717904920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:32:56</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b956eacf61c61a100f46f2e3ec156124</update_guid>
+        <update_guid_history>b956eacf61c61a100f46f2e3ec156124:-569811649</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Powersys 1732775573380">6227ae03530a1a10938e55e0a0490eb8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-28 06:36:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0e5ee30fbb73447282e9204342179031</sys_id>
+        <sys_metadata>7956eacf53c61a10938e55e0a0490e21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Powersys 1732775573380</sys_name>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_scope_delete display_value="">6bb898cb971e4961a74ee29d87413011</sys_scope_delete>
+        <sys_update_name>sys_app_module_7956eacf53c61a10938e55e0a0490e21</sys_update_name>
+        <sys_update_version display_value="sys_app_module_7956eacf53c61a10938e55e0a0490e21">f556eacf53c61a10938e55e0a0490e25</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:36:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

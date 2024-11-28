@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c0272e03530a1a10938e55e0a0490e12" label="Power Server" max_length="40" name="x_1559885_powersys_power_server" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Chengdu" label="City" mandatory="true" max_length="40" name="city" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Chengdu" sequence="0" value="Chengdu"/>
+                <element inactive_on_update="false" label="Luzhou" sequence="1" value="Luzhou"/>
+                <element inactive_on_update="false" label="Meishan" sequence="2" value="Meishan"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="in_use" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failed" sequence="1" value="failed"/>
+                <element inactive_on_update="false" label="New" sequence="3" value="new"/>
+                <element inactive_on_update="false" label="In Use" sequence="2" value="in_use"/>
+                <element inactive_on_update="false" label="Expired" sequence="0" value="expired"/>
+            </choice>
+        </element>
+        <element label="CPU" mandatory="true" max_length="40" name="cpu" type="integer"/>
+        <element attributes="encode_utf8=false" label="Owner" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="99" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Marketing" sequence="1" value="Marketing"/>
+                <element inactive_on_update="false" label="HR" sequence="5" value="HR"/>
+                <element inactive_on_update="false" label="Accounting" sequence="2" value="Accounting"/>
+                <element inactive_on_update="false" label="Legal" sequence="3" value="Legal"/>
+                <element inactive_on_update="false" label="Financial" sequence="0" value="Financial"/>
+                <element inactive_on_update="false" label="IT" sequence="4" value="IT"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Server Name" mandatory="true" max_length="40" name="server_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" dependent="city" dependent_on_field="city" label="Location" max_length="40" name="location" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Chengdu" inactive_on_update="false" label="Wuhou" sequence="2" value="Wuhou"/>
+                <element dependent_value="Meishan" inactive_on_update="false" label="Dongpo" sequence="4" value="Dongpo"/>
+                <element dependent_value="Luzhou" inactive_on_update="false" label="Jiangyang" sequence="3" value="Jiangyang"/>
+                <element dependent_value="Meishan" inactive_on_update="false" label="Renshou" sequence="5" value="Renshou"/>
+                <element dependent_value="Chengdu" inactive_on_update="false" label="Chenghua" sequence="0" value="Chenghua"/>
+                <element dependent_value="Chengdu" inactive_on_update="false" label="Shuangliu" sequence="1" value="Shuangliu"/>
+            </choice>
+        </element>
+        <element label="Owner Email" max_length="40" name="owner_email" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Installation Date" max_length="40" name="installed_date" type="glide_date"/>
+        <element label="Memory" mandatory="true" max_length="40" name="memory" type="integer"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+    </element>
+</database>

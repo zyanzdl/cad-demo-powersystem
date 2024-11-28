@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Server Detail Information" section_id="5be13ecf530a1a10938e55e0a0490ec5" sys_domain="global" table="x_1559885_powersys_power_server" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>27e17ecf530a1a10938e55e0a0490e0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reference_1</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>abe17ecf530a1a10938e55e0a0490e0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>23e17ecf530a1a10938e55e0a0490e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>a7e17ecf530a1a10938e55e0a0490e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>2fe17ecf530a1a10938e55e0a0490e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>owner_email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>a3e17ecf530a1a10938e55e0a0490e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>2be17ecf530a1a10938e55e0a0490e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:34</sys_created_on>
+            <sys_id>afe17ecf530a1a10938e55e0a0490e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Server Detail Information" display_value="Server Detail Information" name="x_1559885_powersys_power_server" sys_domain="global" view="Default view">5be13ecf530a1a10938e55e0a0490ec5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Server Detail Information</caption>
+            <header>false</header>
+            <name>x_1559885_powersys_power_server</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-28 07:23:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5be13ecf530a1a10938e55e0a0490ec5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1559885_powersys_power_server</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+            <sys_update_name>sys_ui_section_5be13ecf530a1a10938e55e0a0490ec5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-28 07:23:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
