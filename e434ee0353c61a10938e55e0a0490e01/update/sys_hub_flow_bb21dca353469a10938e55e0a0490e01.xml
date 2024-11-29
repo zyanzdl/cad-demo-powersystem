@@ -1,0 +1,3004 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=798000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>8c9680e353069a10938e55e0a0490ed6</copied_from>
+        <copied_from_name>Power Service Renew</copied_from_name>
+        <description>The subflow is used for power service renew if the service installation date is more than 2 years.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>power_service_renew</internal_name>
+        <label_cache>[{"name":"subflow.record","label":"Input➛Record","reference":"x_1559885_powersys_power_server","reference_display":"Power Server","type":"reference","base_type":"reference","usedInstances":{"330c3aee-3f7e-471c-b65b-e28be9e3dd2b":["record"],"7d71636c-2c86-4bb0-81ff-09038f32d140":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ce9b1c52-acb2-4d83-a008-6415b7052510","uiTypeLabel":"Reference"}},{"name":"7d71636c-2c86-4bb0-81ff-09038f32d140.record.state","label":"5 - Update Record➛x_1559885_powersys_power_server Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"state","choices":[{"label":"In Use","image":"","used":false,"rawLabel":"In Use","selected":false,"reference":false,"missing":false,"value":"in_use","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"New Installation","image":"","used":false,"rawLabel":"New Installation","selected":false,"reference":false,"missing":false,"value":"new","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Failed","image":"","used":false,"rawLabel":"Failed","selected":false,"reference":false,"missing":false,"value":"failed","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Renew Service","image":"","used":false,"rawLabel":"Renew Service","selected":false,"reference":false,"missing":false,"value":"Renew Service","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Expired","image":"","used":false,"rawLabel":"Expired","selected":false,"reference":false,"missing":false,"value":"expired","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"294cb1f2-2bd0-445d-a8d8-f8b03f7badbc":["state-2"]}},{"name":"330c3aee-3f7e-471c-b65b-e28be9e3dd2b.record.state","label":"2 - Update Record➛x_1559885_powersys_power_server Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"state","choices":[{"label":"In Use","image":"","used":false,"rawLabel":"In Use","selected":false,"reference":false,"missing":false,"value":"in_use","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"New Installation","image":"","used":false,"rawLabel":"New Installation","selected":false,"reference":false,"missing":false,"value":"new","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Failed","image":"","used":false,"rawLabel":"Failed","selected":false,"reference":false,"missing":false,"value":"failed","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Renew Service","image":"","used":false,"rawLabel":"Renew Service","selected":false,"reference":false,"missing":false,"value":"Renew Service","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Expired","image":"","used":false,"rawLabel":"Expired","selected":false,"reference":false,"missing":false,"value":"expired","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"09465944-74a9-4ed6-954d-9a83eabe957a":["state-2"]}},{"name":"subflow.server_id","label":"Input➛Server ID","reference":"x_1559885_powersys_power_server","reference_display":"Power Server","type":"reference","base_type":"reference","column_name":"","usedInstances":{"1c354251-90bd-45ff-9550-1da4ae974bac":["server_id-0"],"09465944-74a9-4ed6-954d-9a83eabe957a":["server_id-0"],"294cb1f2-2bd0-445d-a8d8-f8b03f7badbc":["server_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e8662fdd-2e3d-4b55-99b4-e206fe2d541f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.decision","label":"Input➛Decision","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Renew","value":"Renew","order":1.0},{"label":"Not Renew","value":"Not Renew","order":2.0}],"usedInstances":{"12c4b475-6b04-45d5-ae1e-b0130ac2ff7a":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"74345d70-f388-4b9e-b515-e2f7add0e4d6"}},{"name":"subflow.state","label":"Input➛State","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[],"usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"97950529-1ecf-4d66-b238-71cff83076ef"}}]</label_cache>
+        <master_snapshot>884110e353469a10938e55e0a0490ee7</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Power Service Renew</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb21dca353469a10938e55e0a0490e01</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Power Service Renew</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name>sys_hub_flow_bb21dca353469a10938e55e0a0490e01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:34</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01^id=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bb21dca353469a10938e55e0a0490e01^sys_idNOT INf721dca353469a10938e55e0a0490e02"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bb21dca353469a10938e55e0a0490e01</id>
+        <name>Power Service Renew</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>f721dca353469a10938e55e0a0490e02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f721dca353469a10938e55e0a0490e02"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bb21dca353469a10938e55e0a0490e01^sys_idNOT IN7721dca353469a10938e55e0a0490e2c,7f21dca353469a10938e55e0a0490e1a,7f21dca353469a10938e55e0a0490e21,93d1102753469a10938e55e0a0490e54,9524d0e753469a10938e55e0a0490e6d,afd1102753469a10938e55e0a0490e9e,e3d1102753469a10938e55e0a0490e6e,f321dca353469a10938e55e0a0490e16"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=74345d70-f388-4b9e-b515-e2f7add0e4d6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Renew</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Decision</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>7721dca353469a10938e55e0a0490e2c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7721dca353469a10938e55e0a0490e2c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=243e563e-a483-4152-abb9-250e8a4e5c31</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server Name</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>7f21dca353469a10938e55e0a0490e1a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f21dca353469a10938e55e0a0490e1a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3e588e87-745f-4b9d-8c8d-b08994293edb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Owner</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>7f21dca353469a10938e55e0a0490e21</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f21dca353469a10938e55e0a0490e21"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=c37d86e5-c7e3-4a5f-968d-67322b6ff9c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>City</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>93d1102753469a10938e55e0a0490e54</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93d1102753469a10938e55e0a0490e54"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce9b1c52-acb2-4d83-a008-6415b7052510</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:11:10</sys_created_on>
+        <sys_id>9524d0e753469a10938e55e0a0490e6d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9524d0e753469a10938e55e0a0490e6d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=97950529-1ecf-4d66-b238-71cff83076ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>afd1102753469a10938e55e0a0490e9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afd1102753469a10938e55e0a0490e9e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=d77367e7-bd64-4e11-84f7-d49bbcab1086</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installation_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>Installation Date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>e3d1102753469a10938e55e0a0490e6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3d1102753469a10938e55e0a0490e6e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e8662fdd-2e3d-4b55-99b4-e206fe2d541f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>f321dca353469a10938e55e0a0490e16</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f321dca353469a10938e55e0a0490e16"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=bb21dca353469a10938e55e0a0490e01^sys_idNOT IN7721dca353469a10938e55e0a0490e37,bb21dca353469a10938e55e0a0490e33,ff21dca353469a10938e55e0a0490e3a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=92f7fbcf-a8dc-4312-8a22-7b4c87c33d76</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>7721dca353469a10938e55e0a0490e37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7721dca353469a10938e55e0a0490e37"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=302daf47-3023-4d73-8ed6-732a5ffd4387</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>bb21dca353469a10938e55e0a0490e33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bb21dca353469a10938e55e0a0490e33"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=758f2d88-6e21-4988-bec3-9f6f57a55fd2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>renew</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Renew</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</model>
+        <model_id>bb21dca353469a10938e55e0a0490e01</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>ff21dca353469a10938e55e0a0490e3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ff21dca353469a10938e55e0a0490e3a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=bb21dca353469a10938e55e0a0490e01^sys_idNOT IN3b21dca353469a10938e55e0a0490e42,7721dca353469a10938e55e0a0490e43"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>3b21dca353469a10938e55e0a0490e42</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:12:00</sys_updated_on>
+        <ui_id>330c3aee-3f7e-471c-b65b-e28be9e3dd2b</ui_id>
+        <values>H4sIAAAAAAAA/+VVXYviMBT9K5JnkdYv1LdlRFiYnQFdfJkdStpcnUCadpPUj5X+971p0io64zowL7I+Nfcr55zeY18OhDMyIX1gQTgOh0kv7PW6QdAd9cN42IvDLutRgJC0iaQpYKWCJFMMzxsqChs4HHQRr0S27bhUWWKScZ0Lul/6Gowkb1wwBZJMXl7bJKcKxxlQZHI4S92KR9AYBJbOa0DnAM0+t2eWJUUK0kS8Dj76zqnPtL5PMYNNFk4YtAnsDEgGCGRFhYY2Salk1GRqTyZGFRhQQNmzFPum4o1L44imdKf5H7y5H9i6FSCzxIvQHH/SWMDUieRSqyk1dIHTE1OoRrOMJ6CdLgxWtBDm4TTmCp5zwzPpWowd7LszUaTyyalCmgEn76TQEDHILVeL3lFbLd6y7bwGOuOyksXTFFlCRXOixigeF8bCORAQUOmc0jznch3lKtvwqhmhpJ21wEPHLgreqfladmhicXdQWdqZYXxahZdUcUviB47B5rJN9F4/CKr1kQrqGP0uLBJHzFOIKhUqCaJqG2xzonhuvuFVG2iAu6AF7bcFn94pLMuy7Q0SD64tZDI+7t/J9UeT7KJwMBiPRoMoz7agkJF7iDSoDbK8cMy/Gz5nqBvw14aqdvMDPt5TF7HH097Wk0t4Rw2+zFGje3OUp3L3lvrASI07gu7Vv+uTbaoMoU+coQ018KsIgh6bg4Rta4ELjq/g0hJXKj/nhRvQ1l6YcRBMvwO/NgKkCNFA5OicmcEnW0ufbD4xX+aIcBhUvzvzxf/ypSlf/wIXACNWYQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>7721dca353469a10938e55e0a0490e43</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:12:00</sys_updated_on>
+        <ui_id>7d71636c-2c86-4bb0-81ff-09038f32d140</ui_id>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1FCUEELAbFSGN1GmldsSmU0VOfAOWnMfYDo9B/PtcxyZE0Gmp1A2arPB9+Zybc8jLnnBGpmQALAgn4SiNwijqB0F/PAiTUZSEfRZRgJB4pKA5YKWEtJQMz2sqahPY71WdZKLc+DZ1OGCScVUJulu4GoykKy6YhIJMX149UlGJ4zRIMt2fpa7FI2gCAkufjoDOAepdZc6sTOscCh3zY/Dedc5cpvd9hhlsMnDCwCOw1VAwQCAZFQo8ktOCUV3KHZlqWWNAAmWPhdi1FSteaEs0p1vF/+DNg8DUZYDMUreE9viTJgJmdkk2lc2ops84PdW1bHdW8hSU3QuDjNZC33VjtuCx0rwsbIs2g113Keq8eLBbIe2AzjupFcQMKsPVoLfUsudVuXk6Ap3zolmLoynKlIr2RLWWPKm1gbMnIKDZc06rihfLuJLlmjfNCCX3lwIPvhEK3qn4svBpanD7uFnqzzE+a8ILKrkh8QPHYPPBI2qn7gRV6kQF9xj/rg0SS8xRiJstNCuIGzWY5lTySn/Dq9bggB88p/pk+J7K0slJVJ2ZJ+Vv43A4nIzHw7gqNyARpv0RK5BrhH5hg48bPueSK/AfXdII7h98nFEuYvfd3t6DTTibDL/MJuNbs4mjcvM++cgdQf/d/+COmhpDqI4zlKYaftVBEDHYVlwCuzTDmzWf0/8VCI/6n3MQTL0B+Sh+yBGchthSODOAS/YWLtl+K77MBeEoaJ4b88J/88l4/QtkxtT0KgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=bb21dca353469a10938e55e0a0490e01^sys_idNOT IN3b21dca353469a10938e55e0a0490e40,7721dca353469a10938e55e0a0490e41,b321dca353469a10938e55e0a0490e42,fb21dca353469a10938e55e0a0490e3f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c38010a353469a10938e55e0a0490e75</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>server_id,renew,state</outputs_assigned>
+        <parent_ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>3b21dca353469a10938e55e0a0490e40</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:31</sys_updated_on>
+        <ui_id>09465944-74a9-4ed6-954d-9a83eabe957a</ui_id>
+        <values>H4sIAAAAAAAA/9VWXW+bMBT9KxPPMQMMMeStUlWp0rZKa9aXaULGvk6tOUCNSZpF+e+zgXy1VRdlVae94Wv73nPPPQdYe1Vr6tY00+qiaeSs9Cbf157k3sQjJAo5ozjB8TijYZDhFJIEAhrEWQCYeCOvpHOwJxvQC9C5vTXyFlS1LrZeN20hVLX0d7ubjd3nsqkVXd394Ri7l4prcHB+jLyaalvJgPYm6ydbZlVDrmgBymb7CgLsDgOb4dQetndvu/ofri9f7svVsSF9UKHS3CGKRh48Gig52IqCqgZG3pyWnJpKr3YRDZTflGofuJelsQk9d/ixkb9sdhyNDgpMvMc8TJIsTZO8rpagm1XTP+Q9sI6mSjK4qY2syj6ZoYU68W6l2nn5pW/VTQYEbZXZTsZG2gZyDrVrzWEdgIvb+2q5Y/pKlh0Lw6aqGFW7FTVGy6I10LjBtXL6nMQ++OmFAYKCua2bz2ldy3KW17payK6WhT73Z8oufCcdi9Ep16fM0eBb4ql/ZeOXXfiOauk4+WzTdH238lspH1q4dgLJIkFEwQSiKWcoxmGEUhpFiBQxSwnDmJOxt+nGkj+0rrWeqoGUvKfdHmiYlrW5sBAWMPS/GQ1OEuJVFdK94mzvsDxwUfjcMUa3cLZBpvbyxysHbuuQE7Dt3dWDe4J1cEZRVQpoufcFfjNfxMGxL14V/j9V9p6EY10f8f4uwiZJKiKepmgMUYhi+yZABTCMMjEWCaFJInj018IuilfFgw9epYYaOPo8YBwwTAEQFgRQTEKGinFSIIjSAjLAnEeFr4FZNfnd7Zc/H+elOc89t3bm5WzrnBOa31/su39CxuCcZpt2ME74ZsZJg+C/sc6OhWPn7Dh/F9fgIOJUxATZB4xiTjBKgY8RwRFNhOAxTsnZrrFykqX71+qltRiQDEsOTDYW8NTFrg/O8ZWVjWSHoWWlf7pW97HNb5WldDPJCQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">421984e753069a10938e55e0a0490e8d</block>
+        <comment>If the server is no needed to renew the service</comment>
+        <connected_to>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>7721dca353469a10938e55e0a0490e41</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:31</sys_updated_on>
+        <ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8f8010a353469a10938e55e0a0490e77</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>server_id,renew,state</outputs_assigned>
+        <parent_ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>b321dca353469a10938e55e0a0490e42</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:31</sys_updated_on>
+        <ui_id>294cb1f2-2bd0-445d-a8d8-f8b03f7badbc</ui_id>
+        <values>H4sIAAAAAAAA/9VWXW+bMBT9KxPPMQMMmOStUlWp0rZKa9aXaULGvk6tOUCNSZpF+e+zgXy1VRdlVae94Wv73nPPPQdYe1Vr6tY00+qiaeSs9Cbf157k3sQjJAo5ozjBcTqmYTDGGSQJBDSIxwFg4o28ks7BnmxAL0Dn9tbIW1DVuth63bSFUNXS3+1uNnafy6ZWdHX3h2PsXiquwcH5MfJqqm0lA9qbrJ9smVUNuaIFKJvtKwiwOwxshlN72N697ep/uL58uS9Xx4b0QYVKc4coGnnwaKDkYCsKqhoYeXNacmoqvdpFNFB+U6p94F6Wxib03OHHRv6y2XE0Oigw8R7zMEnGWZbkdbUE3aya/iHvgXU0VZLBTW1kVfbJDC3UiXcr1c7LL32rbjIgaKvMdjI20jaQc6hdaw7rAFzc3lfLHdNXsuxYGDZVxajaragxWhatgcYNrpXT5yT2wU8vDBAUzG3dfE7rWpazvNbVQna1LPS5P1N24TvpWIxOuT5ljgbfEk/9Kxu/7MJ3VEvHyWebpuu7ld9K+dDCtRPIOBJEFEwgmnGGYhxGKKNRhEgRs4wwjDlJvU03lvyhda31VA2k5D3t9kDDtKzNhYWwgKH/zWhwkhCvqpDuFWd7h+WBi4LnjulSn+2QqW7h49WQ4lRwe3v16J6AHaxRVJUCWu6Ngd/MGHFwbIxXlf9Ppb0n4VjYR7y/i7JJkomIZxlKIQpRbF8FqACG0VikIiE0SQSP/lrZRfGqePDBu9RQA0ffB8JJmOKUoYhlKYqLIkBZKAQKxgHOBI54GAe+BmbV5He3X/5+nJfmPPfc2pmXs61zTmh+f7Hv/gkZg3OabdrBOOGbGScLgv/GOjsWjp2z4/xdXIODiFMRE2QfMIo5wSgDniKCI5oIwWOckbNdY+UkS/ez1UtrMSAZlhyYbCzgqYtdH5zjKysbyQ5Dy0r/dK3uY5vfLXeVzsoJAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">461984e753069a10938e55e0a0490e8a</block>
+        <comment>If the server is needed to renew the service</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>fb21dca353469a10938e55e0a0490e3f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:31</sys_updated_on>
+        <ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvcMBD8K8XPxsh2fDT3FlIChbaBJOSlDWYtre9EZcmV5Ltczf33rvxxdzQXUkrf+mbNandmVoP7yHS+7bx7MFfOyZWOll+f4kjqgNF3H2loMFpG3GghvTS6HIA42oDqQoE+hXStgt3jEeFrqYTFaVoLlno82mjZ/1byuxZLBRUqarz3VuoVtUtBp5pBnV7ylOfZIs8Yy95fpNUir9JM5ICQ07258XoW9+7TgMSvqg58hLuZyVgRZKUsjvDZoxZI1DUoh3HUgBbgjd0dEIsgbrU6Amup/ei4gWcnf9LsrCjCxRrJIz+sw0iOt21QMiIeKjUXjeoa/WUUHLaJNXTKn2yzc1gKbIO6QDdx1/drs72biW6kHpxMRWU4qMMJPPmtOo8uvAAqbGhQ2UDb0hbK1pqNHJpJS5OsFB2SWpktkYZIJMCD8ISWAckN4R8G+BGsDC4+0xhqHmVW4CQvh/jQOG/Jwn5YR/mjC4JGg5OVctwGXXDcytZfEc8GJ9X7+GX2TmLX966rgshEIJeOivv9t46xXNyhxu3LVL7d8C9CewlFXaSsOB/ai8W50J6J6+tJzd5Ialj5HwaVMfafJlW6ckzc5G0g/+ugPoVUjgxuDMicsIeAfZz/paGwo5eW/BTaGvs9WDhi+1+7ua+ylQUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01^sys_idNOT IN2bd1102753469a10938e55e0a0490ea2,6fd1102753469a10938e55e0a0490e71,7321dca353469a10938e55e0a0490e1a,7b21dca353469a10938e55e0a0490e1d,7b21dca353469a10938e55e0a0490e24,9fd1102753469a10938e55e0a0490e58,d924d0e753469a10938e55e0a0490e71,fb21dca353469a10938e55e0a0490e30"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>2bd1102753469a10938e55e0a0490ea2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:01:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>installation_date</element>
+        <help/>
+        <hint/>
+        <label>Installation Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>6fd1102753469a10938e55e0a0490e71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:01:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_id</element>
+        <help/>
+        <hint/>
+        <label>Server ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>7321dca353469a10938e55e0a0490e1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_name</element>
+        <help/>
+        <hint/>
+        <label>Server Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>7b21dca353469a10938e55e0a0490e1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner</element>
+        <help/>
+        <hint/>
+        <label>Owner</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:13</sys_created_on>
+        <sys_id>7b21dca353469a10938e55e0a0490e24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>City</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:12</sys_created_on>
+        <sys_id>9fd1102753469a10938e55e0a0490e58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:01:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:11:10</sys_created_on>
+        <sys_id>d924d0e753469a10938e55e0a0490e71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision</element>
+        <help/>
+        <hint>To make decision if service is end of support</hint>
+        <label>Decision</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>fb21dca353469a10938e55e0a0490e30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01^sys_idNOT IN44c2146753469a10938e55e0a0490e36,7bb2146753469a10938e55e0a0490e32,b321dca353469a10938e55e0a0490e2e,fb21dca353469a10938e55e0a0490e2d"/>
+    <sys_choice field="city" table="var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 09:05:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7bb2146753469a10938e55e0a0490e32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:05:04</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="decision" table="var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Renew</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b321dca353469a10938e55e0a0490e2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+            <value>Not Renew</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Renew</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb21dca353469a10938e55e0a0490e2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+            <value>Renew</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="state" table="var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_bb21dca353469a10938e55e0a0490e01</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 09:05:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44c2146753469a10938e55e0a0490e36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:05:04</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01^sys_idNOT IN7b21dca353469a10938e55e0a0490e36,f321dca353469a10938e55e0a0490e3a,ff21dca353469a10938e55e0a0490e3c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>7b21dca353469a10938e55e0a0490e36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_id</element>
+        <help/>
+        <hint/>
+        <label>Server ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>f321dca353469a10938e55e0a0490e3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>renew</element>
+        <help/>
+        <hint/>
+        <label>Renew</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:14</sys_created_on>
+        <sys_id>ff21dca353469a10938e55e0a0490e3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bb21dca353469a10938e55e0a0490e01"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2627000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>8c9680e353069a10938e55e0a0490ed6</copied_from>
+        <copied_from_name/>
+        <description>The subflow is used for power service renew if the service installation date is more than 2 years.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>power_service_renew</internal_name>
+        <label_cache>[{"name":"subflow.record","label":"Input➛Record","reference":"x_1559885_powersys_power_server","reference_display":"Power Server","type":"reference","base_type":"reference","usedInstances":{"330c3aee-3f7e-471c-b65b-e28be9e3dd2b":["record"],"7d71636c-2c86-4bb0-81ff-09038f32d140":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ce9b1c52-acb2-4d83-a008-6415b7052510","uiTypeLabel":"Reference"}},{"name":"7d71636c-2c86-4bb0-81ff-09038f32d140.record.state","label":"5 - Update Record➛x_1559885_powersys_power_server Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"state","choices":[{"label":"In Use","image":"","used":false,"rawLabel":"In Use","selected":false,"reference":false,"missing":false,"value":"in_use","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"New Installation","image":"","used":false,"rawLabel":"New Installation","selected":false,"reference":false,"missing":false,"value":"new","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Failed","image":"","used":false,"rawLabel":"Failed","selected":false,"reference":false,"missing":false,"value":"failed","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Renew Service","image":"","used":false,"rawLabel":"Renew Service","selected":false,"reference":false,"missing":false,"value":"Renew Service","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Expired","image":"","used":false,"rawLabel":"Expired","selected":false,"reference":false,"missing":false,"value":"expired","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"294cb1f2-2bd0-445d-a8d8-f8b03f7badbc":["state-2"]}},{"name":"330c3aee-3f7e-471c-b65b-e28be9e3dd2b.record.state","label":"2 - Update Record➛x_1559885_powersys_power_server Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"state","choices":[{"label":"In Use","image":"","used":false,"rawLabel":"In Use","selected":false,"reference":false,"missing":false,"value":"in_use","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"New Installation","image":"","used":false,"rawLabel":"New Installation","selected":false,"reference":false,"missing":false,"value":"new","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Failed","image":"","used":false,"rawLabel":"Failed","selected":false,"reference":false,"missing":false,"value":"failed","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Renew Service","image":"","used":false,"rawLabel":"Renew Service","selected":false,"reference":false,"missing":false,"value":"Renew Service","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Expired","image":"","used":false,"rawLabel":"Expired","selected":false,"reference":false,"missing":false,"value":"expired","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"09465944-74a9-4ed6-954d-9a83eabe957a":["state-2"]}},{"name":"subflow.server_id","label":"Input➛Server ID","reference":"x_1559885_powersys_power_server","reference_display":"Power Server","type":"reference","base_type":"reference","column_name":"","usedInstances":{"1c354251-90bd-45ff-9550-1da4ae974bac":["server_id-0"],"09465944-74a9-4ed6-954d-9a83eabe957a":["server_id-0"],"294cb1f2-2bd0-445d-a8d8-f8b03f7badbc":["server_id-0"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e8662fdd-2e3d-4b55-99b4-e206fe2d541f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.decision","label":"Input➛Decision","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Renew","value":"Renew","order":1.0},{"label":"Not Renew","value":"Not Renew","order":2.0}],"usedInstances":{"12c4b475-6b04-45d5-ae1e-b0130ac2ff7a":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"74345d70-f388-4b9e-b515-e2f7add0e4d6"}},{"name":"subflow.state","label":"Input➛State","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[],"usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"97950529-1ecf-4d66-b238-71cff83076ef"}}]</label_cache>
+        <master>true</master>
+        <name>Power Service Renew</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>884110e353469a10938e55e0a0490ee7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=884110e353469a10938e55e0a0490ee7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=884110e353469a10938e55e0a0490ee7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7^id=884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=884110e353469a10938e55e0a0490ee7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=884110e353469a10938e55e0a0490ee7^sys_idNOT IN084110e353469a10938e55e0a0490ee8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>884110e353469a10938e55e0a0490ee7</id>
+        <name>Power Service Renew</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>084110e353469a10938e55e0a0490ee8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=084110e353469a10938e55e0a0490ee8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=884110e353469a10938e55e0a0490ee7^sys_idNOT IN004110e353469a10938e55e0a0490ef6,004150e353469a10938e55e0a0490e49,18c2146753469a10938e55e0a0490edc,404150e353469a10938e55e0a0490e11,584150e353469a10938e55e0a0490e7e,5cc2146753469a10938e55e0a0490eb6,e0c2146753469a10938e55e0a0490ef1,fa3494e753469a10938e55e0a0490e90"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e8662fdd-2e3d-4b55-99b4-e206fe2d541f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>004110e353469a10938e55e0a0490ef6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=004110e353469a10938e55e0a0490ef6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3e588e87-745f-4b9d-8c8d-b08994293edb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Owner</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>004150e353469a10938e55e0a0490e49</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=004150e353469a10938e55e0a0490e49"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=d77367e7-bd64-4e11-84f7-d49bbcab1086</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installation_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>Installation Date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:05</sys_created_on>
+        <sys_id>18c2146753469a10938e55e0a0490edc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=18c2146753469a10938e55e0a0490edc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=243e563e-a483-4152-abb9-250e8a4e5c31</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server Name</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>404150e353469a10938e55e0a0490e11</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=404150e353469a10938e55e0a0490e11"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=74345d70-f388-4b9e-b515-e2f7add0e4d6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>Renew</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Decision</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>584150e353469a10938e55e0a0490e7e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=584150e353469a10938e55e0a0490e7e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=c37d86e5-c7e3-4a5f-968d-67322b6ff9c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>City</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:05</sys_created_on>
+        <sys_id>5cc2146753469a10938e55e0a0490eb6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5cc2146753469a10938e55e0a0490eb6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=97950529-1ecf-4d66-b238-71cff83076ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:06</sys_created_on>
+        <sys_id>e0c2146753469a10938e55e0a0490ef1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e0c2146753469a10938e55e0a0490ef1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ce9b1c52-acb2-4d83-a008-6415b7052510</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:11:32</sys_created_on>
+        <sys_id>fa3494e753469a10938e55e0a0490e90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa3494e753469a10938e55e0a0490e90"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=884110e353469a10938e55e0a0490ee7^sys_idNOT IN944150e353469a10938e55e0a0490eaa,9c4150e353469a10938e55e0a0490e8d,d84150e353469a10938e55e0a0490e94"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=758f2d88-6e21-4988-bec3-9f6f57a55fd2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>renew</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Renew</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>944150e353469a10938e55e0a0490eaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=944150e353469a10938e55e0a0490eaa"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=302daf47-3023-4d73-8ed6-732a5ffd4387</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>State</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>9c4150e353469a10938e55e0a0490e8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c4150e353469a10938e55e0a0490e8d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=92f7fbcf-a8dc-4312-8a22-7b4c87c33d76</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1559885_powersys_power_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</model>
+        <model_id>884110e353469a10938e55e0a0490ee7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1559885_powersys_power_server">x_1559885_powersys_power_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>d84150e353469a10938e55e0a0490e94</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d84150e353469a10938e55e0a0490e94"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=884110e353469a10938e55e0a0490ee7^sys_idNOT IN904150e353469a10938e55e0a0490eb7,984150e353469a10938e55e0a0490eb7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>904150e353469a10938e55e0a0490eb7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>330c3aee-3f7e-471c-b65b-e28be9e3dd2b</ui_id>
+        <values>H4sIAAAAAAAA/+VVXYviMBT9K5JnkdYv1LdlRFiYnQFdfJkdStpcnUCadpPUj5X+971p0io64zowL7I+Nfcr55zeY18OhDMyIX1gQTgOh0kv7PW6QdAd9cN42IvDLutRgJC0iaQpYKWCJFMMzxsqChs4HHQRr0S27bhUWWKScZ0Lul/6Gowkb1wwBZJMXl7bJKcKxxlQZHI4S92KR9AYBJbOa0DnAM0+t2eWJUUK0kS8Dj76zqnPtL5PMYNNFk4YtAnsDEgGCGRFhYY2Salk1GRqTyZGFRhQQNmzFPum4o1L44imdKf5H7y5H9i6FSCzxIvQHH/SWMDUieRSqyk1dIHTE1OoRrOMJ6CdLgxWtBDm4TTmCp5zwzPpWowd7LszUaTyyalCmgEn76TQEDHILVeL3lFbLd6y7bwGOuOyksXTFFlCRXOixigeF8bCORAQUOmc0jznch3lKtvwqhmhpJ21wEPHLgreqfladmhicXdQWdqZYXxahZdUcUviB47B5rJN9F4/CKr1kQrqGP0uLBJHzFOIKhUqCaJqG2xzonhuvuFVG2iAu6AF7bcFn94pLMuy7Q0SD64tZDI+7t/J9UeT7KJwMBiPRoMoz7agkJF7iDSoDbK8cMy/Gz5nqBvw14aqdvMDPt5TF7HH097Wk0t4Rw2+zFGje3OUp3L3lvrASI07gu7Vv+uTbaoMoU+coQ018KsIgh6bg4Rta4ELjq/g0hJXKj/nhRvQ1l6YcRBMvwO/NgKkCNFA5OicmcEnW0ufbD4xX+aIcBhUvzvzxf/ypSlf/wIXACNWYQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>984150e353469a10938e55e0a0490eb7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>7d71636c-2c86-4bb0-81ff-09038f32d140</ui_id>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1FCUEELAbFSGN1GmldsSmU0VOfAOWnMfYDo9B/PtcxyZE0Gmp1A2arPB9+Zybc8jLnnBGpmQALAgn4SiNwijqB0F/PAiTUZSEfRZRgJB4pKA5YKWEtJQMz2sqahPY71WdZKLc+DZ1OGCScVUJulu4GoykKy6YhIJMX149UlGJ4zRIMt2fpa7FI2gCAkufjoDOAepdZc6sTOscCh3zY/Dedc5cpvd9hhlsMnDCwCOw1VAwQCAZFQo8ktOCUV3KHZlqWWNAAmWPhdi1FSteaEs0p1vF/+DNg8DUZYDMUreE9viTJgJmdkk2lc2ops84PdW1bHdW8hSU3QuDjNZC33VjtuCx0rwsbIs2g113Keq8eLBbIe2AzjupFcQMKsPVoLfUsudVuXk6Ap3zolmLoynKlIr2RLWWPKm1gbMnIKDZc06rihfLuJLlmjfNCCX3lwIPvhEK3qn4svBpanD7uFnqzzE+a8ILKrkh8QPHYPPBI2qn7gRV6kQF9xj/rg0SS8xRiJstNCuIGzWY5lTySn/Dq9bggB88p/pk+J7K0slJVJ2ZJ+Vv43A4nIzHw7gqNyARpv0RK5BrhH5hg48bPueSK/AfXdII7h98nFEuYvfd3t6DTTibDL/MJuNbs4mjcvM++cgdQf/d/+COmhpDqI4zlKYaftVBEDHYVlwCuzTDmzWf0/8VCI/6n3MQTL0B+Sh+yBGchthSODOAS/YWLtl+K77MBeEoaJ4b88J/88l4/QtkxtT0KgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=884110e353469a10938e55e0a0490ee7^sys_idNOT IN184150e353469a10938e55e0a0490eb5,544150e353469a10938e55e0a0490eb6,d44150e353469a10938e55e0a0490eb3,d84150e353469a10938e55e0a0490eb4"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">421984e753069a10938e55e0a0490e8d</block>
+        <comment>If the server is no needed to renew the service</comment>
+        <connected_to>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>184150e353469a10938e55e0a0490eb5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8f8010a353469a10938e55e0a0490e77</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>server_id,renew,state</outputs_assigned>
+        <parent_ui_id>04b2ad2f-4386-418c-b121-13f3f3efedfb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>544150e353469a10938e55e0a0490eb6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>294cb1f2-2bd0-445d-a8d8-f8b03f7badbc</ui_id>
+        <values>H4sIAAAAAAAA/+WW32+bMBDH/5XJzyEDDIH0bWpVqdJ+aen2Mk3osM+tVQeYMUmzKP/7bKCEtF1XbVlf9kaOs/29790nZkvKxlSNqS/LN3Utrwpy8nVLJCcnJEnCgDOgMY1mcwj8OU0xjtEHP5r7SBMyIQUs0WbWqFeoM7tqQlagGhfbbusmF6pcT4e3u519z2VdKdh8+U0au5aKa3Ryvk1IBdqeZFCTEyuusA8FqLeyuLE7PEh+rngFOSqbumgPfnVx9nhBZlO5kEaB9giGfehtv/rTKF5q7iSGE4K3BguOVokAVeOELKHgYEq9GSIagX8o1D5wbQvr6lnCbS1/2FNpOBkdfEJusyCO52kaZ1W5Rl1v6u4h6wSTUfYl5ArPOrPtyo8u7dXiLk2cgYGF0Q0zjcY7F0vJsO5M5CigUeZ0HOsSPlRGlkW3xLhDnqWLlapZFu87e8mw/90Y2EhTY8axcrY5H3pTxOK6XA8en8uidbh/qUoGapSKoNn1uUTlJsCJaBsIxmiZN8aVsSWNvHzY0C74WEtR4dLqyZZQVbK4yipdrmSrwZa0nF4p+2Pq5tdqd/hMgTl7prbZMD238bM2/AW0dF69s9u0fjTycyG/N3jhpM5DkYicCQ9SzryIBqGXQhh6SR6xNGGU8mRGdhNX0qmCut7baIvIvjfOhM7U3r6sa5BbwrSszBsraoW9U7tJD7gQTzICex6sG7gewe0/BLnd+gjgPkOUGvrUqbonsgc2L0uFUNzD9VI3+Pq819rzSo/Ga+Qf8voEkMeH8GUo+wVNe7cPWTrw+0VgSuJUhDxNvRmGgRfZfyUvR0a9uZiJOIE4Fjz8BzDl+ZNzS0eXiwGDBzdlwpNgRmfMC1k686I89700EMLz5z5NBQ15EPlTjczO67Rd/fhN+mfb/C2wzyh8uGn7yu8Z0QNb28Eqru7xurgL9qwGR2M19f3/ltbB6kNYB7NfBFTqhxxElHj2gXoRT6iXIp95CQ0hFoJHNE2OCKqb18J96XadWfXahuYxWdsS2r5fjPL4xk6rZOPQutQ3rvh9bPcTrx2keEcLAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">461984e753069a10938e55e0a0490e8a</block>
+        <comment>If the server is needed to renew the service</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>d44150e353469a10938e55e0a0490eb3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</ui_id>
+        <values>H4sIAAAAAAAA/+1VTWsbMRD9K0XnxexHbBrfgk2gkDaQhFzasMxKWltUK231Ycdd/N87Wq3XJnFJAzn2tnqjmXnvaYbtiPau9c4+6CtrxUqR+fenhAgVMPzuiIKGkzmhWjHhhFZlDyRkA9KHAH4yYVsJu8cjQtdCMsOHai0YzHHckHn3IiQYJtQp1NklzWiRz4o8TfPPF1k1K6osZwVwKLCghIpLvLo40Ph00yPJX/m5XRtw64xQq+F8M1S5P4DasMAqSxPCnx1XjCOfGqTlCWlAMXDa7EbEcGC3Sh6BtVAuCm7g2Yrf2DCfTsPFmqNEOrgxHh+gknwZ3YqhegkOkI6nzpvRPC0ot9Egxmvw0i1OsXjhtg1yY4oLhYdsLX2jvkVXyFjg5HG85SXjbVAb6A9a6vu13t4dmF4L1TszBKWmIMcTOPSv8i7w6QiXvMFCZQNti66WrdEb0Scjl2aykniY1FJvsWmYsAnQQHyC5sLkGvFlDz+CEUHFVyyDyZFmBVbQsp9GLIc2cbJPiN3ZhQRrjyLR4fKXDxSj5EFcGf0JKdSI1l1h5w0fdOyT18N9MtddZ30VaE8Yp8JicL//4dO0YHdc8e3rsX874X1bcQnTepql0/NbcTE7txVn9uGdq5C/sQrhDf5xE9I0/b8KH7IKwpZxgAdtffMP3ISnMPax5+h1HOH+mb4c/gYhsMMBE/QU2mrzM4g6Yvs/X5IhV1cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c38010a353469a10938e55e0a0490e75</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>server_id,renew,state</outputs_assigned>
+        <parent_ui_id>12c4b475-6b04-45d5-ae1e-b0130ac2ff7a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>d84150e353469a10938e55e0a0490eb4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+        <ui_id>09465944-74a9-4ed6-954d-9a83eabe957a</ui_id>
+        <values>H4sIAAAAAAAA/+WWUU/bMBDHvwryc9OlcdKkvCEQEhIb08p4maboYp/Bwk2C47R0Vb/77CZNU2AMbR0ve0svZ/t//7tfnRUpalPWprouTqpK3ubk+NuKSE6OSRwHI86ARjQcT2DkT2iCUYQ++OHERxqTAclhhjazQj1HndpVAzIHVbvYalXVmVDFYti9Xa/tey6rUsHy5jdp7E4qrtHJ+T4gJWh7kkFNjq243D7koC5lfm93eJb8VvEKMlQ2dbo5+Oji7OWCzLJ0IY0C7REM29Blu/pLL15o7iQGA4KPBnOOVokAVeGAzCDnYAq97CIagV/lahe4s4U19czgsZI/7Kk0GPQOPiaP6SiKJkkSpWWxQF0tq+YhbQSTXvY1ZArPGrPtys8u7Wi6TRNnYGBqdM1MrXHrYiEZVo2JHAXUypz2Y03CVWlkkTdLjDvkTbpYoepZ/qmxl3T7b8fARuoKU46ls8350JoipnfFovP4XOYbh9uXqmCgeqkImt2dS1RuApyITQPBGC2z2rgyVqSW188b2gRfaikqnFk96QzKUua3aamLudxosCXNhrfK/hi6+bXaHT5DYM6eoW02DM9t/GwTvgEtnVcf7TYbP2r5NZcPNV44qZNAxCJjwoOEMy+ko8BLIAi8OAtZEjNKeTwm64Er6VRBVe1stEWkD7UzoTG1tS9tGuSWMC1Lc2JFzbF1aj1oARfiVUZgx4N1Axc9uEfPQbazhAfg9g2aVNemRtQTjS2vWVEohPwJrddW5Ydz58IOV3owXEN/H9dXeDw8g+8D2S9g2rm9j9Ke3+/CUhwlIuBJ4o0xGHmh/VPyMmTUm4ixiGKIIsGDf8BSlr06t7R3txgwuHdRUuozCogeFTF6YTxiXjaOMg+DJMMJUs6DbKiR2Xkdbla/fJH+2TZ/C+wbCu8u2rbyJ0a0wFZ2sPLbJ7xOt8GW1dHBWE18/7+ltbN6H9bO7HcBlfoBBxHGnn2gXshj6iXIx15MA4iE4CFN4gOC6uY1dx+6TWfmrbaueUxWtoRN3y96eXxpp1WyfmhR6HtX/C62/gmZkU4eRgsAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=884110e353469a10938e55e0a0490ee7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7^sys_idNOT IN1cc2146753469a10938e55e0a0490ec0,404150e353469a10938e55e0a0490e50,544150e353469a10938e55e0a0490e89,8c4150e353469a10938e55e0a0490e17,c84150e353469a10938e55e0a0490e0e,dcc2146753469a10938e55e0a0490ee4,e4c2546753469a10938e55e0a0490e07,fe3494e753469a10938e55e0a0490eaa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>City</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:05</sys_created_on>
+        <sys_id>1cc2146753469a10938e55e0a0490ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:05:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner</element>
+        <help/>
+        <hint/>
+        <label>Owner</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>404150e353469a10938e55e0a0490e50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision</element>
+        <help/>
+        <hint>To make decision if service is end of support</hint>
+        <label>Decision</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>544150e353469a10938e55e0a0490e89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_name</element>
+        <help/>
+        <hint/>
+        <label>Server Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>8c4150e353469a10938e55e0a0490e17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_id</element>
+        <help/>
+        <hint/>
+        <label>Server ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:31</sys_created_on>
+        <sys_id>c84150e353469a10938e55e0a0490e0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>installation_date</element>
+        <help/>
+        <hint/>
+        <label>Installation Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:06</sys_created_on>
+        <sys_id>dcc2146753469a10938e55e0a0490ee4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:05:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:05:06</sys_created_on>
+        <sys_id>e4c2546753469a10938e55e0a0490e07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:05:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:11:32</sys_created_on>
+        <sys_id>fe3494e753469a10938e55e0a0490eaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7^sys_idNOT IN104150e353469a10938e55e0a0490e82,14c2146753469a10938e55e0a0490eba,68c2146753469a10938e55e0a0490ef4,d84150e353469a10938e55e0a0490e83"/>
+    <sys_choice field="city" table="var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 09:05:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14c2146753469a10938e55e0a0490eba</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="decision" table="var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Renew</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>104150e353469a10938e55e0a0490e82</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+            <value>Renew</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>decision</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Renew</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d84150e353469a10938e55e0a0490e83</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+            <value>Not Renew</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="state" table="var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_884110e353469a10938e55e0a0490ee7</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-29 09:05:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68c2146753469a10938e55e0a0490ef4</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-29 09:11:33</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7^sys_idNOT IN104150e353469a10938e55e0a0490ea8,544150e353469a10938e55e0a0490e92,584150e353469a10938e55e0a0490eae"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_id</element>
+        <help/>
+        <hint/>
+        <label>Server ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>104150e353469a10938e55e0a0490ea8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>544150e353469a10938e55e0a0490e92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>renew</element>
+        <help/>
+        <hint/>
+        <label>Renew</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_id>584150e353469a10938e55e0a0490eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 08:58:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_884110e353469a10938e55e0a0490ee7"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>bb21dca353469a10938e55e0a0490e01</sys_id>
+        <latest_snapshot>884110e353469a10938e55e0a0490ee7</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=bb21dca353469a10938e55e0a0490e01"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=bb21dca353469a10938e55e0a0490e01^sys_idNOT INd04150e353469a10938e55e0a0490ec3"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"d04150e353469a10938e55e0a0490ec3","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Power Service Renew">bb21dca353469a10938e55e0a0490e01</plan_id>
+        <snapshot>a95498e753469a10938e55e0a0490e66</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 08:58:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d04150e353469a10938e55e0a0490ec3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:11:34</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

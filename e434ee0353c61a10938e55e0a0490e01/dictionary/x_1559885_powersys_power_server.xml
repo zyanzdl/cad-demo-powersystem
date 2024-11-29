@@ -9,10 +9,11 @@
         </element>
         <element attributes="edge_encryption_enabled=true" choice="3" default="in_use" label="State" mandatory="true" max_length="40" name="state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Failed" sequence="1" value="failed"/>
-                <element inactive_on_update="false" label="New" sequence="3" value="new"/>
-                <element inactive_on_update="false" label="In Use" sequence="2" value="in_use"/>
-                <element inactive_on_update="false" label="Expired" sequence="0" value="expired"/>
+                <element inactive_on_update="false" label="Failed" sequence="2" value="failed"/>
+                <element inactive_on_update="false" label="Renew Service" sequence="3" value="Renew Service"/>
+                <element inactive_on_update="false" label="New Installation" sequence="1" value="new"/>
+                <element inactive_on_update="false" label="In Use" sequence="0" value="in_use"/>
+                <element inactive_on_update="false" label="Expired" sequence="4" value="expired"/>
             </choice>
         </element>
         <element label="CPU" mandatory="true" max_length="40" name="cpu" type="integer"/>

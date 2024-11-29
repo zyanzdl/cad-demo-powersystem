@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>The flow is used to validate whether or not the power server service is end of supported, change the state and send notification if it's true.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>power_server_eos</internal_name>
+        <label_cache>[{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.u_reference_1.name","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛Owner➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["owner"]}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.server_name","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛Server Name","reference":"","reference_display":"Server Name","type":"string","base_type":"string","parent_table_name":"x_1559885_powersys_power_server","column_name":"server_name","usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["server_name"]}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.number_2","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1559885_powersys_power_server","column_name":"number_2","usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["server_id"]}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record","reference":"x_1559885_powersys_power_server","reference_display":"x_1559885_powersys_power_server Record","type":"reference","base_type":"reference","usedInstances":{"01ae6904-933b-4d5d-a1fc-4404dad679f1":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.city","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛City","reference":"","reference_display":"City","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"city","choices":[{"label":"Chengdu","image":"","used":false,"rawLabel":"Chengdu","selected":false,"reference":false,"missing":false,"value":"Chengdu","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Luzhou","image":"","used":false,"rawLabel":"Luzhou","selected":false,"reference":false,"missing":false,"value":"Luzhou","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Meishan","image":"","used":false,"rawLabel":"Meishan","selected":false,"reference":false,"missing":false,"value":"Meishan","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["city"]}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.installed_date","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛Installation Date","reference":"","reference_display":"Installation Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1559885_powersys_power_server","column_name":"installed_date","usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["installation_date"]}},{"name":"a7222d28-cf99-447e-8341-e6dafd4a3e28.Record.state","label":"1 - Look Up Record➛x_1559885_powersys_power_server Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1559885_powersys_power_server","column_name":"state","choices":[{"label":"In Use","image":"","used":false,"rawLabel":"In Use","selected":false,"reference":false,"missing":false,"value":"in_use","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"New Installation","image":"","used":false,"rawLabel":"New Installation","selected":false,"reference":false,"missing":false,"value":"new","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Failed","image":"","used":false,"rawLabel":"Failed","selected":false,"reference":false,"missing":false,"value":"failed","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Renew Service","image":"","used":false,"rawLabel":"Renew Service","selected":false,"reference":false,"missing":false,"value":"Renew Service","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}},{"label":"Expired","image":"","used":false,"rawLabel":"Expired","selected":false,"reference":false,"missing":false,"value":"expired","parameters":{"name":"x_1559885_powersys_power_server","dependent_values":[""]}}],"usedInstances":{"731304b5-9f6b-498a-896e-b246e4ac3a21":["state"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Power Server EOS Process</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:36:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46874f9b538e5a10938e55e0a0490e25</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Power Server EOS Process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name>sys_hub_flow_46874f9b538e5a10938e55e0a0490e25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:06:47</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_variable_value action="delete_multiple" query="document_key=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=46874f9b538e5a10938e55e0a0490e25^sys_idNOT IN02874f9b538e5a10938e55e0a0490e28"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>46874f9b538e5a10938e55e0a0490e25</id>
+        <name>Power Server EOS</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:36:26</sys_created_on>
+        <sys_id>02874f9b538e5a10938e55e0a0490e28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:36:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=02874f9b538e5a10938e55e0a0490e28"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=46874f9b538e5a10938e55e0a0490e25^sys_idNOT IN720bcf5753ce5a10938e55e0a0490ef5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Power Server EOS Process">46874f9b538e5a10938e55e0a0490e25</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:46</sys_created_on>
+        <sys_id>720bcf5753ce5a10938e55e0a0490ef5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 06:28:14</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SS0/kMAz+Kyjn2SqdYXn0ttJqJA4s0oK4IFS5iTtjyU2yaTpQEP8dpy2IHVHlYn/297D68KoYGmRVqTvqUK0UuYTRAd+NAaW7Y7JYpxnrwFlIPo6qSnHAlfLRYlRVqfVKHYAHvB37KytrMuygywTL6oRKWV6e6x+6lHeiLyqt5Qlq9sQ2olPVw+NKBYiymzLz6xFEmXwD9hSt0Wazlk/r9cVp2ZxtmnJtN4D4UwiPQv3vJX0T7WsSfE7oLIpUC9zjN7kjgr1xPH5O7OVsc+wOnnt6wYUqYoti3uAMmr0ngzchkXdzJ0HDH6DnoXN/ZqtSW2xh4HS/XE46Q4+1xZDNZblFu73d+6e/H0JbclOSBWRvgD8rSClSMyTs82mRsROiuoMQyO3qEP2BpmXx0hXTfYqW/ZOI9rRzBZhsvJBbQLGV/u+pfQ+RcoproZHltyl1/W/IunOOxXE9h5YBS31gGLeEvPwtvYkU0i8ROOBi9+3xHTS8K5meAgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=46874f9b538e5a10938e55e0a0490e25^sys_idNOT IN320bcf5753ce5a10938e55e0a0490efa,f60bcf5753ce5a10938e55e0a0490ef6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send mail to server owner for server EOS detail information.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Power Server EOS Process">46874f9b538e5a10938e55e0a0490e25</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>320bcf5753ce5a10938e55e0a0490efa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:01:27</sys_updated_on>
+        <ui_id>87962fb0-30df-4c44-830a-aa70a7af99e0</ui_id>
+        <values>H4sIAAAAAAAA/+1c3Y7jNBR+FavXTcl/mu4NsGXFSLCL2AEuWBQ5tjNjNk1C4m6ni5C45xGQEM/Co/AkHOenTduZTvozQ2dqzUpNHJ/jc3y+8x3Ha+XHX3uc9kY9mw51N4xs7OmWaen60PT90PIjfej5ukFor99L8IRBz5yRNJf3H3A8lQ1wSXmRxXj+/bKFXPOY5izpjX78qd/LcA7CguW90a9rj8Q8Y0GMQxaD4Dgl0wlLBLoYg46uhjXSlzi/YgJ92xi4brAcCu5pPUjAZSM8kmbp/R67ESyhDAaNcFywfm+CE4pFms8XLTnD9E0SLxuueSJA5WdFkRKOBSuQuGaITTCP0YyLa4RRNfygJ/XdFPwjmGCZUlXEYBKItIgnhFOwqJy3lBP2JhM8TaqZFDiMm0lN4+kkeV25JaedRXgai9a0TwsWUJZJP6RhIp+CkdHb63T2bTPeK56UHtcexCnB8eIOC5HzcAqOlJGKGc6X+oLSJKkTRmIxKydxgrOMJ1dBlqcfeKkYzJwMrmK4GURxOgP5gl8lA0ykTwOYUTx4Be3jsvl7nHPp4NegBoR/Kycm+GUqbapcXB1c9g3KwELXguQ8E5+B4g+sduG3fg1ow9+GG2ov8dHS+SCgvpT60etKf1fbVoTvsLXG80pbDWfjIDhfAoZFlUwVepGozVhAeKivQvjo0K0t2hu7D4NPCGARVLCrfSsHvxe396FVd90wdEPHs5aI8ElEvTBysUesJQJmwDL5BOfvg5JlWpA1NjFb5+qeuAXhT16V7vU7W9kIXyQknlKGfmjM3eZBDeQwTYFwkiWKzYNQXCERiRRB7OI5UPFiZNm4JGpxjQXiBSogXAN0mSJeG9+S6KN5OkWTaSGgm4AnK/mxwu72cVOjjmHdOr41wE8idw7NEWc7a+IlwvB1INJWZqDNzEB7p8VbmKnkqkmJDkYt8indtLBGftHorIFvbQd+VdY3cN8iZ/1c6ZmymE94GcUqOQ5FHd0aYKavxJSQFuo+znHykcafkmTAw8kA3OrfAsQ7eh0Dmx1MbwRfvtz04w5s2vuRsgLnA4DT2PpyxNyVoIYr6DziAncVdR1sagQ/X4NduA13jsLdyeDO2R5jshLVYhr+zIhoYe+bdMZy9JblH+BHrry+ePO2jzJY/BXyxeM9rLxKx4pNkO4iepT6fr+nC8GFn7f5fgeqXVXp/5fFJN4a18hc5aWUzlvwfTfVdYtkSFqoCZ7MJ4TlaSpCmIb35UP6rveu6sbGDOeokigynCAS46JoOkkNAQBTmp3xOH7XQ4WYx2zxvAL/CN5IYp6wF/CcpAnARTDKy6A2PUvv4HFpk1RVGrtuzHY7QApB+hCWiSIQOU6KKM0nQTRNqpQC9TCmjPxNI6g/pEWllFarL38xTEJ+n6iUKrp00gSkXmOhgJdPwTON06ZLuUYvGy/TbL1bbVXT10Qa+i6DHqzefixDbrpX4gW6CQwHXhOGTpBJ8irmRXURFBWLbQi8mYGXrXuZrJ38KeClVDQ9N0yqRD+Rsh104TxPZ92jVJKgRgDKYlehlZH+/evPO+xsNQwGgxOzaLe5BaJqtJex3Vc9cKxIE7SE7GbSBhEmmLIgokNHt11X85lvanZkWJrvOkMt8i3CsAOtfpnLbVvv1IaStMUPcneFM3rfJFcUplWkrHFIoFskbme/JC25r47H7390nrBqgnab1FZDv27J6ufJTsxfJXASFtmLXS6R3H0Fh1EayT2nHMFyAF8xilaWPvIHirxcAbGbjOeMrq6C5O5WzmLIftqsiOSmF1QaNisfFrWCNEfFNJF7Wk0rywcH+V1bOGZCbq7xRIIEl1txMS+kPZBi6Wx0jDEuxqO1SVRVVlXZblX29XQSdnNT1dUnWFer6D5GZfUc2x5SprmmZWu2hX1t6BtYiyxKnSENh27IVGVda0B7FsfjXB5aduSibbTugqo8qvJ0qzwtFKny8zzLTzvEj1CDQsu3DdM0NRxSAm93FGqQY+qaG3rEwI7tO8RTNWhLDdr1+qAqUu7v7FA/FG+fBm+rfbnzIfDHYm7XNMLQdLGm+0TXbJd52pC6Qy3STQr6aGhTfO7M3Zmc92bkl1zM13eS1NJelYidS4QEkioJz7MklLF9hJJACXV0zzE1j0ahZpt6pPkeszTbiUxi2p4XGva5l4RbG/63/aQnsns1ZlCvhDyMMVInElRZ26GsLZGjitvzLG6tCD9CiSNEdwzD9jUT8KHZPqaar0cRzJLvUTuMsOM5qsTd3rAf918kkJRxXP0//BiSUZUAVQJ2KQEbAFKV4HlWgs1AP0JB8D2DGkPD0KgRYs2muqdhnbgaZbZp4WFkEawKwvaCsHlWvi4QTYE/6jnk41D3ydCtorLnSGXqcO0Js9ddh2ur23/+bv5O+DxsdXvYedcVHRfj0T9/K5JWJH1OJK1Oap4yTaMlE7f/urBZdUxSEZoitLMiNHX270mwWvvfVjarj+vdx2OKdxTvnMXbrjqytgu/bKWW8tzZcjmllkiKqs6CqtRRqtOhqo2G21/4dn4JfJjTRoreFL2dPL2pwzQnT3JbqetBD8soBlMMdvIMpg6BPE0i2/urh19efv1V883DDt/GW3zBs/oy3san8uqvHV6LSbz81qF34Bc8Xcex3LP82iHEcUZNmqdZVvt20Gc8f/oPkkeLPvZjAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Search server records for those service is already EOS.</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Power Server EOS Process">46874f9b538e5a10938e55e0a0490e25</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>f60bcf5753ce5a10938e55e0a0490ef6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 06:28:14</sys_updated_on>
+        <ui_id>a7222d28-cf99-447e-8341-e6dafd4a3e28</ui_id>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUFPW8DxSr5JzlvRwECBbgO0aYFFNiAokbK5S5MqSdlxgvz7DkXJdnxVHAdIXwyLHM6cmTlzRPv20WfEv/TJMBhmw2E/joKg2w2CwaCb4jBJuoM0CRLc81u+wFMKlgYnnMLjDPPCPt+jsN8fxnEf5XJOlV5o9wVpqmZUgSVhOud48bPxgXTCOFFU+Je3dy0/xwoiG9i5fNzYMoucIo4TysHvjQXmfbUoW42TenZ4O0kboH5EwrmWilgsQcun94YKQiFUhrmmLX+KBcFGqsVyRVFMrgVfLUyYMODRt8b3mj2A+ziwdhmFtFLq9tKJZCm9zg2Twq04RG5T8mIqvjqktr40wwU3dX1hpdAUEZpbcDZaFTr7PpHzb3WgERNlHtUmlynmyydsjGJJYai2RaecTsERmuI8Z2KMciVnrDwMWKbtMYeHdsblHIJqNhZtnFrgbagFbo9g/apc/okVs1n8BW7KPmeMQ1uRq66WhSrTn6GUF7rcUFho58t/KmuEfhUWpcu6yg+5EoGBThXLzUc4MKNVKk+tmuD9g1wYrnqfSkGYjanXWM6ENphzShAkRf8pwElafpJ/8Qy7wJdj3U7omAkBRbrOvmBtOn9TrPQfH7an4PUOT5uST+vZNa3MzsO7ylXNy7O1al7Cs81LLwjeemKMKt7fwBwbAZfwkTkIycFuk1VjtVQGucqtDcI2k0+m4ohRTp4JdgNw9eFryyovWezDWzExszE2lLvz+yj3u+QhACLIFZYJzkT5hgSg5yFo/yAHknCj4WWfV/Qs10A+t2mKPSO9h9N1s+xrTdQGIOuD3wGRd+NQ7gBeK2btvuJo92wc7Xb2cBQYcvu4hLksz45K1jce26Pa/sHa4017oNHagfDpbsnxT6fFDF8as2Njbgxh90VTuE4ht3O1h0lnvmbtmarWW47xBI5W8ZCbSjRnZEzNKnptRaSZY/7frv1q1JbDUqb36itbePD6nqxd2ViGptAnlsM9UtEUqKARVhRlshAEVTfIFW1s3zKmtKmMt8XiGzWFEp6E2fLMhHqltbe0PoeENMiuPvg58+r0Kgzag/S8Mj1vmd7LirFHeHpnvKY1Ep4RZrysMVz587UmUaWk2iM+R9pzoM8NlakhqPCsoF4vXbuIvVPCjmD9LX4/vlZeUoqTXgcPom4YBkEYkCiIoyiMB0k2wFEvW00UQlqkoH/gOQNigHtUE6HuarCtIU4ET/43A8T1z1Hloine+vCVFPa3ZCcyngUMffZqwMdTqoQhkZJTLFb07L+9MryXPzwKdrNZBLf0ZVd33ur1XLAfgv0q6Gfb/ZgGnTgk6UUchdFFLyODiyHB/Qs8TPpRl9C0l53+xr37H7LKSxkHFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=46874f9b538e5a10938e55e0a0490e25^sys_idNOT IN0be1902753469a10938e55e0a0490e0a"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Power Server EOS Process">46874f9b538e5a10938e55e0a0490e25</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="Power Service Renew">884110e353469a10938e55e0a0490ee7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+2YWW/bOBDHv4qgZ9OQKFKk8lY0KBCgmwBpty9BIFDkKCFWllQdOTbId1/q9BHb8dpueiBv0UgczvxnfhnSV0+2VvaJ7TjEdR3wqEf8QLhO4HGgFBzhkMCB2LcndipmYL4sobiDIjSrJvadSOrG9vQkGMZYYY5kHASIEAaIe8RF4CsRKyI8wHx6CTIr1DStZ5HxgJ+fjQulyzwRj98O9yRvdaIKSO2Tq+uJnYvCxFtBYZ88rbyqHnMIExFBYja8hBjMGwnGw65KDGu/tFJYZ6fr1Wn2MaZiYQcTdBORO7HhoYJUgdkxFkkJE3smUiWqrHgcLQUIdZEmc8OtTivj0G4+fij1v8a7hycLG5zYD6FLacA5DfPsHorysez+CLvAWpkyLeEir3SWds4qESU7rs2Sepaed6k2xYNY1Ek1FM9Y6hJCBXmTWhNrH3j85Ta7H5X+pNNWhf5lkkmRjE+iqgod1RWUTeFq/fWliJ3x85oCQgIzs284E3mu05swL7I73e5lQp9NbxLzMI2T7N7EWOqbdCpkI8PUCC+mn4z9tDV/E4VuNPnLuGnzrvXfqf5ew1nTIMB9H8dKIQyeQiSiFAVBRBBgx48BK0rc2H5uyxJ+r5vUOql6UcJOdvNBKQudVx9MCHfQ5/886Xkkpgvpxi503Rcd1z7tS+SCj8OhXHV2JC53UGSFy/NOkrU6bWYTv7P5+7KJiQfU9wAJwj1kGgYjEUUBwqZzuCBApecezCaVErvEZ+s7MVqYlVJXj3tD2Sw+hMa90fvYduHA3Q7Zjgu7dJeT70mTg9MeM+9omBFnGbORI9OlV09jcAhZ51kKFkILFVkyDsP5+Xqk5+OujlaWr4DsLpD8U1Edq7DM6VjxN4FUekxxHyiSDAykgsYo8LlCPvMwjvw4DuThkDpbxwUJ5n2a3adtjPtRWodj74Xu9DgTdIPPIx5wX1FmWHvRS7Oi1ObhSd6H5+87PM3o5Bw4Q4wYJEkUKMSl4TJyeBAQHHigooO5dPm2caLkvNt0WlYiSUSTSGgS2f9423sC1bpZx+fedJ12ce2a2rDsbCE3q/exJe0euLbMg60njv74OboOqZ/KzJIOy9D0Wr4JL4oxz2fAUKR8goi5gyBOYoYUCaJIish1uH8wL+Bsa6p48SJYHcJIu/oXOG7ukO94zauWwBny33Dg9H+JA+f7MfPN8AxYQB2KA+SCNONM+T6KsMcRc2Ucc89hPhz+Ow3l2w5TbKE9FUhdNnWaV/MSUrh/SdxgPsrt7fX4xlE2D/BlyBugYtuhqop6C1NfM2sm/gFr2MbSsdWcyMwOli4t49XKjKXO86yotp0NNwA46Lgq90jQZP7teVZZq98v2oYfh16B9kdtuQK6979AH9usM5+u77Y/+n8BIx6hijko9jhvjraAIupSBDhmQilz7VH7j+rr/wCcAjjyRRkAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 09:01:27</sys_created_on>
+        <sys_id>0be1902753469a10938e55e0a0490e0a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 09:06:46</sys_updated_on>
+        <ui_id>731304b5-9f6b-498a-896e-b246e4ac3a21</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=46874f9b538e5a10938e55e0a0490e25^sys_idNOT IN360bcf5753ce5a10938e55e0a0490efd,3a0bcf5753ce5a10938e55e0a0490efc,66e5bb1f53829a10938e55e0a0490e8c,720bcf5753ce5a10938e55e0a0490efc,720bcf5753ce5a10938e55e0a0490efd,aa35fbdb53829a10938e55e0a0490ef6,be0bcf5753ce5a10938e55e0a0490efc,f60bcf5753ce5a10938e55e0a0490efd,fa0bcf5753ce5a10938e55e0a0490efc"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.department}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>360bcf5753ce5a10938e55e0a0490efd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cc051149-23e2-49ad-90ff-ca97d4bfa575</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.server_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>3a0bcf5753ce5a10938e55e0a0490efc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b3941222-abdc-4fd9-8520-6b7c1a5495c7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.u_reference_1.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 06:59:05</sys_created_on>
+        <sys_id>66e5bb1f53829a10938e55e0a0490e8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 06:59:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>fd850466-9e92-4f13-9658-f93cea59e990</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.number_2}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>720bcf5753ce5a10938e55e0a0490efc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f75448de-6234-43a9-891a-f3dd58db86be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.city}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>720bcf5753ce5a10938e55e0a0490efd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dcd50752-7dfb-420f-97e3-45f2c2477b14</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.u_reference_1.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 06:56:05</sys_created_on>
+        <sys_id>aa35fbdb53829a10938e55e0a0490ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 06:56:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>621bb26a-09c0-46e7-8d68-f02d03edb4da</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.owner_email}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>be0bcf5753ce5a10938e55e0a0490efc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>37c659cc-5a0d-437f-b413-01269ba4f9c6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.installed_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>f60bcf5753ce5a10938e55e0a0490efd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>971d1811-d1ba-4d07-a0c6-de423a8f3ca5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46874f9b538e5a10938e55e0a0490e25</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{01ae6904-933b-4d5d-a1fc-4404dad679f1.record.u_reference_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 03:51:47</sys_created_on>
+        <sys_id>fa0bcf5753ce5a10938e55e0a0490efc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 03:51:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f5716fbe-3f5a-4e27-a2ff-414164475e16</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=46874f9b538e5a10938e55e0a0490e25"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=46874f9b538e5a10938e55e0a0490e25"/>
+</record_update>
