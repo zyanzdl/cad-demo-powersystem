@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1559885_powersys_power_server_task</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1559885_powersys_power_server_task</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 07:38:50</sys_created_on>
+        <sys_id>1c325e8c53d65e10938e55e0a0490e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1559885_powersys_power_server_task</sys_name>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_update_name>sys_security_acl_1c325e8c53d65e10938e55e0a0490e08</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 07:38:50</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Power System">e434ee0353c61a10938e55e0a0490e01</application>
+        <file_path/>
+        <instance_id>e47140311b1ef1507d9d2f8dee4bcb24</instance_id>
+        <instance_name>dev203920</instance_name>
+        <name>sys_security_acl_1c325e8c53d65e10938e55e0a0490e08</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description>Default access control on x_1559885_powersys_power_server_task</description><local_or_existing>Local</local_or_existing><name>x_1559885_powersys_power_server_task</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-01 07:38:50</sys_created_on><sys_id>1c325e8c53d65e10938e55e0a0490e08</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1559885_powersys_power_server_task</sys_name><sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package><sys_policy/><sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope><sys_update_name>sys_security_acl_1c325e8c53d65e10938e55e0a0490e08</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-01 07:38:50</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>609263105</payload_hash>
+        <record_name>x_1559885_powersys_power_server_task</record_name>
+        <reverted_from/>
+        <source>b33b074f538a1a10938e55e0a0490e08</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 07:38:50</sys_created_on>
+        <sys_id>9c325e8c53d65e10938e55e0a0490e0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19381286d3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 07:38:50</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>90325e8cb0d65e1098acea913e25370c</update_guid>
+        <update_guid_history>90325e8cb0d65e1098acea913e25370c:609263105</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 07:43:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>7f1e5b6321864e8caf0a0b57be27a404</sys_id>
+        <sys_metadata>1c325e8c53d65e10938e55e0a0490e08</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1559885_powersys_power_server_task</sys_name>
+        <sys_package display_value="Power System" source="x_1559885_powersys">e434ee0353c61a10938e55e0a0490e01</sys_package>
+        <sys_parent display_value="">2c325e8c53d65e10938e55e0a0490e33</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Power System">e434ee0353c61a10938e55e0a0490e01</sys_scope>
+        <sys_scope_delete display_value="">6bb898cb971e4961a74ee29d87413011</sys_scope_delete>
+        <sys_update_name>sys_security_acl_1c325e8c53d65e10938e55e0a0490e08</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_1c325e8c53d65e10938e55e0a0490e08">9c325e8c53d65e10938e55e0a0490e0c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 07:43:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

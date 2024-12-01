@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8fb45680531a5e10938e55e0a0490e15" extends="task" label="Power Service Task" max_length="40" name="x_1559885_powersys_power_service_task" type="collection"/>
+</database>
